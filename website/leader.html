@@ -17,30 +17,49 @@
     </nav>
     <div class="page6" id="page6">
         <div class="part1">
-            <h1>Reviews</h1>
-        <div class="card">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit excepturi laborum quia suscipit culpa
-                ipsam veniam velit voluptatibus quo officiis, iste dicta temporibus odio molestiae voluptates alias
-                adipisci saepe modi?
-                Suscipit reprehenderit, eaque unde minus laboriosam pariatur amet</p>
-        </div>
-        <div class="card">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit excepturi laborum quia suscipit culpa
-                ipsam veniam velit voluptatibus quo officiis, iste dicta temporibus odio molestiae voluptates alias
-                adipisci saepe modi?
-                Suscipit reprehenderit, eaque unde minus laboriosam pariatur amet</p>
-        </div>
-        <div class="card">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit excepturi laborum quia suscipit culpa
-                ipsam veniam velit voluptatibus quo officiis, iste dicta temporibus odio molestiae voluptates alias
-                adipisci saepe modi?
-                Suscipit reprehenderit, eaque unde minus laboriosam pariatur amet</p>
-        </div>
+            <div class="line">
+                <h1>Reviews</h1>
+                <div class="sort">
+                    <button onclick="toggleDropdown()" class="dropbtn">Filter <img src="filter.png" alt=""></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <!-- <a href="#"></a> -->
+                        <button>Severity</button>
+                        <hr>
+                        <!-- <a href="#">Frequency</a> -->
+                        <button>Frequency</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit excepturi laborum quia suscipit culpa
+                    ipsam veniam velit voluptatibus quo officiis, iste dicta temporibus odio molestiae voluptates alias
+                    adipisci saepe modi?
+                    Suscipit reprehenderit, eaque unde minus laboriosam pariatur amet</p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit excepturi laborum quia suscipit culpa
+                    ipsam veniam velit voluptatibus quo officiis, iste dicta temporibus odio molestiae voluptates alias
+                    adipisci saepe modi?
+                    Suscipit reprehenderit, eaque unde minus laboriosam pariatur amet</p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit excepturi laborum quia suscipit culpa
+                    ipsam veniam velit voluptatibus quo officiis, iste dicta temporibus odio molestiae voluptates alias
+                    adipisci saepe modi?
+                    Suscipit reprehenderit, eaque unde minus laboriosam pariatur amet</p>
+            </div>
         </div>
         <div class="part2">
             <img src="sample4.jpg" alt="">
         </div>
     </div>
+    <script>
+        let myDropdown = document.getElementById('myDropdown')
+        function toggleDropdown() {
+            myDropdown.classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>

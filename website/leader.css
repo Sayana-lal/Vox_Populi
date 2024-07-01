@@ -96,3 +96,78 @@ p {
     position: fixed;
     border-radius: 10px;
 }
+.line{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #007bff; */
+    width: 100%;
+}
+.sort{
+    display: flex;
+    flex-direction: column;
+}
+button {
+    background-color: var(--btn-bg-clr);
+    color: var(--button-clr);
+    font-size: 15.9px;
+    letter-spacing: 0.5px;
+    width: 150px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s background-color ease, 0.3s scale ease;
+}
+
+/* button:hover {
+    background-color: #0167d3;
+} */
+
+button:active{
+    scale: 1.02;
+}
+.dropbtn{
+    /* background-color: #007bff; */
+    background: var(--primary-clr);
+    color: var(--btn-bg-clr);
+    border: 1.59px solid;
+    border-radius: 0;
+}
+.dropdown-content{
+    position: absolute;
+    /* right: 1.5px; */
+    top: 95%;
+    background-color: var(--primary-clr);
+    border: 1.59px solid var(--btn-bg-clr);
+    display: none;
+}
+
+.show{
+    display: block;
+}
+.dropdown-content a{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 150px;
+    height: 45px;
+    text-decoration: none;
+    color: var(--btn-bg-clr);
+}
+.dropdown-content button{
+    background-color: transparent;
+    color: #007bff;
+}
+.dropdown-content button:active{
+    scale: 1;
+}
+.dropbtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dropbtn img{
+    width: 25px;
+}
